@@ -15,6 +15,7 @@ jobs:
       - uses: actions/cache@v3
         id: unity-cache
         with:
+          key: /Application/Unity
           path: |
             /Application/Unity
 
