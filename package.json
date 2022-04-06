@@ -1,0 +1,33 @@
+{
+  "name": "unity-license-activation-github-action",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiojin/unity-license-activation-github-action.git"
+  },
+  "keywords": [
+    "unity",
+    "unity3d"
+  ],
+  "author": "akiojin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akiojin/unity-license-activation-github-action/issues"
+  },
+  "homepage": "https://github.com/akiojin/unity-license-activation-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0",
+    "@akiojin/unity-command": "^1.0.5",
+    "@types/tmp": "^0.2.3",
+    "tmp": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}

@@ -1,0 +1,23 @@
+name: 'unity-license-activation-github-action'
+description: 'このアクションは Unity のライセンスアクティベーションを行います。'
+inputs:
+  unity-version:
+    description: >
+      Specify the Unity version to be used.
+      If omitted, the project version is used.
+    required: false
+    default: ''
+  username:
+    required: true
+  password:
+    required: true
+  serial:
+    required: false
+  ulf-file-base64:
+    required: false
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: "box"
+  color: "orange"

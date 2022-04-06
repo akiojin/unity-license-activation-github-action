@@ -1,0 +1,30 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v3
+        id: unity-cache
+        with:
+          path: |
+            /Application/Unity
+
+      - name: Install Unity
+        if: ${{ unity-cache.cache-hit }} == false
+        run: |
+          brew install --cask unity
+
+      - uses: ./
+        with:
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          ulf-file-base64: ${{ secrets.LICENSE_FILE_BASE64 }}
