@@ -23,9 +23,3 @@ jobs:
         if: ${{ steps.unity-cache.cache-hit }} == false
         run: |
           brew install --cask unity
-
-      - uses: ./
-        with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          ulf-file-base64: ${{ secrets.LICENSE_FILE_BASE64 }}
