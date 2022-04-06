@@ -19,7 +19,7 @@ jobs:
             /Application/Unity
 
       - name: Install Unity
-        if: ${{ unity-cache.cache-hit }} == false
+        if: ${{ steps.unity-cache.cache-hit }} == false
         run: |
           brew install --cask unity
 
