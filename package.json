@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/akiojin/unity-license-activation-github-action#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.9.1",
     "@actions/exec": "^1.1.0",
     "@akiojin/unity-command": "^1.0.5",
     "@types/tmp": "^0.2.3",
